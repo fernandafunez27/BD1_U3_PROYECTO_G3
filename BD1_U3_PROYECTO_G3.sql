@@ -55,6 +55,25 @@ INSERT INTO CATEGORIA VALUES ('CA39','Colores_calidos');
 INSERT INTO CATEGORIA VALUES ('CA40','Colores_pastel');
 INSERT INTO CATEGORIA VALUES ('CA41','Largo');
 INSERT INTO CATEGORIA VALUES ('CA42','Corto');
+INSERT INTO CATEGORIA VALUES ('CA43','Talla XXS');
+INSERT INTO CATEGORIA VALUES ('CA44','Talla XS');
+INSERT INTO CATEGORIA VALUES ('CA45','Talla S');
+INSERT INTO CATEGORIA VALUES ('CA46','Talla M');
+INSERT INTO CATEGORIA VALUES ('CA47','Talla L');
+INSERT INTO CATEGORIA VALUES ('CA48','Talla XL');
+INSERT INTO CATEGORIA VALUES ('CA49','Talla XXL');
+INSERT INTO CATEGORIA VALUES ('CA50','Talla EG');
+INSERT INTO CATEGORIA VALUES ('CA51','Talla 33');
+INSERT INTO CATEGORIA VALUES ('CA52','Talla 34');
+INSERT INTO CATEGORIA VALUES ('CA53','Talla 35');
+INSERT INTO CATEGORIA VALUES ('CA54','Talla 36');
+INSERT INTO CATEGORIA VALUES ('CA55','Talla 37');
+INSERT INTO CATEGORIA VALUES ('CA56','Talla 38');
+INSERT INTO CATEGORIA VALUES ('CA57','Talla 39');
+INSERT INTO CATEGORIA VALUES ('CA58','Talla 40');
+INSERT INTO CATEGORIA VALUES ('CA59','Talla 41');
+INSERT INTO CATEGORIA VALUES ('CA60','Talla 42');
+
 
 
 CREATE TABLE MARCA(
@@ -106,6 +125,68 @@ INSERT INTO MARCA VALUES ('M037', 'Buzzbean', '10/02/2022', 'buzzbean@delicious.
 INSERT INTO MARCA VALUES ('M038', 'Tagopia', '25/02/2020', 'tagopia@odnoklassniki.ru');
 INSERT INTO MARCA VALUES ('M039', 'Jabbersphere', '09/02/2020', 'jabbersphere@wunderground.com');
 INSERT INTO MARCA VALUES ('M040', 'Gigashots', '20/07/2019', 'gigashots@rambler.ru');
+INSERT INTO MARCA VALUES ('M041', 'Calan', '12/12/2017', 'calan@gmail.com');
+INSERT INTO MARCA VALUES ('M042', 'Giorgio Armani', '08/10/2020', 'modagiorgio@yahoo.com');
+INSERT INTO MARCA VALUES ('M043', 'Ermenegildo Zegna', '01/11/2015', 'ermezeg@yahoo.com');
+INSERT INTO MARCA VALUES ('M044', 'Yerse', '04/04/2020', 'yerseok@gmail.com');
+INSERT INTO MARCA VALUES ('M045', 'Masscob', '12/05/2022', 'masscob@net.com');
+INSERT INTO MARCA VALUES ('M046', 'Rita Row', '06/12/2021', 'ritarowmoda@gmail.com');
+INSERT INTO MARCA VALUES ('M047', 'La fantástica', '07/06/2019', 'fantastica@outlook.com');
+INSERT INTO MARCA VALUES ('M048', 'Teoh and Lea', '25/06/2014', 'teoandlea@outlook.com');
+INSERT INTO MARCA VALUES ('M049', 'Ecoalf', '14/02/2015', 'ecoalfxmd@hostmail.com');
+INSERT INTO MARCA VALUES ('M050', 'Scalpers', '05/12/2020', 'scalpers@fastmail.com');
+INSERT INTO MARCA VALUES ('M051', 'Edmmond Studios', '05/12/2017', 'edmmondstudios@hostmail.com');
+INSERT INTO MARCA VALUES ('M052', ' Two Thirds', '05/12/2020', 'twothirds@zoho.com');
+INSERT INTO MARCA VALUES ('M053', 'Brava', '12/03/2022', 'bravalook@email.com');
+INSERT INTO MARCA VALUES ('M054', 'Pronovias', '13/07/2021', 'prenovias@fastmail.com');
+INSERT INTO MARCA VALUES ('M055', 'Rosa Clara?', '30/06/2020', 'clararosa@hostmail.com');
+INSERT INTO MARCA VALUES ('M056', 'Yolancris', '27/09/2018', 'yolancris@gmail.com');
+INSERT INTO MARCA VALUES ('M057', 'Otaduy', '26/08/2019', 'otaduy@fastmail.com');
+INSERT INTO MARCA VALUES ('M058', 'Beba’s', '25/07/2020', 'bebas@email.com');
+INSERT INTO MARCA VALUES ('M059', 'Sophie Et Voila?', '24/06/2021', 'modasophievoila@outlook.com');
+INSERT INTO MARCA VALUES ('M060', 'Cortana', '23/05/2022', 'cotanavestuario@email.com');
+INSERT INTO MARCA VALUES ('M061', 'Tommy', '01/05/2019', 'tommy@email.com');
+INSERT INTO MARCA VALUES ('M062', 'Columbia', '10/05/2019', 'columbia@hotmail.com');
+INSERT INTO MARCA VALUES ('M063', 'Diesel', '01/06/2019', 'diesellook@vtr.net');
+INSERT INTO MARCA VALUES ('M064', 'Levis', '23/05/2015', 'levisprendas@yahoo.com');
+INSERT INTO MARCA VALUES ('M065', 'Pacer', '08/02/2018', 'pacer@gmail.com');
+INSERT INTO MARCA VALUES ('M066', 'Fast fashion', '23/02/2015', 'fastfashion@hotmail.com');
+INSERT INTO MARCA VALUES ('M067', 'Supreme', '08/08/2021', 'supreme@userana.cl');
+INSERT INTO MARCA VALUES ('M068', 'FashionTIY', '23/10/2018', 'fashiontiy@vtr.net');
+INSERT INTO MARCA VALUES ('M069', 'Primark', '18/05/2022', 'primark@userana.cl');
+INSERT INTO MARCA VALUES ('M070', 'Asos', '17/09/2018', 'asos@hotmail.com');
+INSERT INTO MARCA VALUES ('M071', 'HM', '18/03/2017', 'handm@email.com');
+INSERT INTO MARCA VALUES ('M072', 'Kiabi', '22/11/2016', 'lamodaqui@kotmail.com');
+INSERT INTO MARCA VALUES ('M073', 'Boohoo', '15/09/2015', 'boohoo@vtr.net');
+INSERT INTO MARCA VALUES ('M074', 'Muroexe', '16/01/2015', 'muroexe@vtr.net');
+INSERT INTO MARCA VALUES ('M075', 'Pompeii', '17/02/2016', 'pompei@email.com');
+INSERT INTO MARCA VALUES ('M076', 'Hoff', '18/03/2017', 'hoffcontigo@gmail.com');
+INSERT INTO MARCA VALUES ('M077', 'Yuccs', '19/04/2018', 'yuccs@outlook.com');
+INSERT INTO MARCA VALUES ('M078', 'Munich', '15/09/2015', 'minich@esfera.cl');
+INSERT INTO MARCA VALUES ('M079', 'Loewe', '20/10/2019', 'loewe@email.com');
+INSERT INTO MARCA VALUES ('M080', 'Zubi', '21/11/2020', 'zubi@gmail.com');
+INSERT INTO MARCA VALUES ('M081', 'Hereu', '22/12/2021', 'hereu@email.com');
+INSERT INTO MARCA VALUES ('M082', 'Heimat', '23/01/2015', 'emait@segabbana.it');
+INSERT INTO MARCA VALUES ('M083', 'M2 Malleiter', '21/11/2018', 'm2malleiter@hotmail.com');
+INSERT INTO MARCA VALUES ('M084', 'Mercules', '21/11/2016', 'mercules@outlook.com');
+INSERT INTO MARCA VALUES ('M085', 'Malababa', '06/04/2020', 'malababa@yahoo.com');
+INSERT INTO MARCA VALUES ('M086', 'Reebok', '21/06/2021', 'reebok@yahoo.com');
+INSERT INTO MARCA VALUES ('M087', 'Valentino', '27/09/2020', 'valentino@esfera.cl');
+INSERT INTO MARCA VALUES ('M088', 'Lacoste', '09/09/2017', 'lacoste@gmail.com');
+INSERT INTO MARCA VALUES ('M089', 'Calvin Klein', '07/11/2019', 'calvinklein@fastmail.com');
+INSERT INTO MARCA VALUES ('M090', 'Victoria Secret', '21/11/2019', 'vistoriasecret@email.com');
+INSERT INTO MARCA VALUES ('M091', 'Jordan', '05/09/2020', 'jordan@yahoo.com');
+INSERT INTO MARCA VALUES ('M092', 'Diadora', '01/07/2022', 'diadoramodas@hotmail.com');
+INSERT INTO MARCA VALUES ('M093', 'Polo', '21/11/2015', 'polo@fastmail.com');
+INSERT INTO MARCA VALUES ('M094', 'Fila', '15/11/2018', 'fila@vtr.net');
+INSERT INTO MARCA VALUES ('M095', 'Wilson', '01/01/2022', 'wilsomsports@email.com');
+INSERT INTO MARCA VALUES ('M096', 'Totto', '09/02/2015', 'totto@gmail.com');
+INSERT INTO MARCA VALUES ('M097', 'Champions', '18/06/2018', 'champions@outlook.com');
+INSERT INTO MARCA VALUES ('M098', 'Umbro', '19/03/2020', 'umbro@yahoo.com');
+INSERT INTO MARCA VALUES ('M099', 'Zara', '21/04/2021', 'zara@email.com');
+INSERT INTO MARCA VALUES ('M100', 'Shein', '25/05/2021', 'shein@yahoo.com');
+INSERT INTO MARCA VALUES ('M101', 'Pink', '30/07/2019', 'pink@outlook.com');
+
 
 CREATE TABLE SEGMENTACION(
 IdSegmentacion     NVARCHAR2(10),
