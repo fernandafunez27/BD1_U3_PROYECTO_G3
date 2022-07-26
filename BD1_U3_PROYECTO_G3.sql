@@ -5,14 +5,14 @@ CREATE USER BD1_U3_PROYECTO_G3 IDENTIFIED BY equipo3; --Usuario y contraseña
 
 --PRIVILEGIOS DE USUARIO
 GRANT DBA TO BD1_U3_PROYECTO_G3;--Se le otorgan todos los privilegios
+--TABLA CATEGORIA
 CREATE TABLE CATEGORIA(
-IdCategoria NVARCHAR2(10),
-Nombre      NVARCHAR2(20) NOT NULL,
+IdCategoria         NVARCHAR2(10),
+Nombre              NVARCHAR2(20) NOT NULL,
 PRIMARY KEY(IdCategoria)
 );
 SELECT * FROM CATEGORIA;
-
---INSERT DE CATEGORIA
+--INSERTS A TABLA CATEGORIA
 INSERT INTO CATEGORIA VALUES ('CA1','Dama');
 INSERT INTO CATEGORIA VALUES ('CA2','Caballero');
 INSERT INTO CATEGORIA VALUES ('CA3','Unisex');
@@ -73,9 +73,9 @@ INSERT INTO CATEGORIA VALUES ('CA57','Talla 39');
 INSERT INTO CATEGORIA VALUES ('CA58','Talla 40');
 INSERT INTO CATEGORIA VALUES ('CA59','Talla 41');
 INSERT INTO CATEGORIA VALUES ('CA60','Talla 42');
+------------------------------------------------------------------------------------
 
-
-
+--TABLA MARCA
 CREATE TABLE MARCA(
 IdMarca     NVARCHAR2(10),
 Nombre      NVARCHAR2(20) NOT NULL,
@@ -84,7 +84,7 @@ Email       NVARCHAR2(30) UNIQUE,
 PRIMARY KEY(IdMarca)
 );
 SELECT*FROM MARCA;
--- INSERT A MARCA
+-- INSERTS A TABLA MARCA
 INSERT INTO MARCA  VALUES ('M001', 'Nike', '15/04/2022', 'Nike@gmail.com');
 INSERT INTO MARCA VALUES ('M002', 'Adidas', '01/11/2021', 'adidas@nps.com');
 INSERT INTO MARCA VALUES ('M003', 'Gucci', '28/09/2021', 'gucci@dolcegabbana.it');
@@ -186,8 +186,9 @@ INSERT INTO MARCA VALUES ('M098', 'Umbro', '19/03/2020', 'umbro@yahoo.com');
 INSERT INTO MARCA VALUES ('M099', 'Zara', '21/04/2021', 'zara@email.com');
 INSERT INTO MARCA VALUES ('M100', 'Shein', '25/05/2021', 'shein@yahoo.com');
 INSERT INTO MARCA VALUES ('M101', 'Pink', '30/07/2019', 'pink@outlook.com');
+--------------------------------------------------------------------------------------
 
-
+--TABLA SEGMENTACION
 CREATE TABLE SEGMENTACION(
 IdSegmentacion     NVARCHAR2(10),
 Nombre             NVARCHAR2(20) NOT NULL,
@@ -195,13 +196,13 @@ Beneficio          NVARCHAR2(50) NOT NULL,
 PRIMARY KEY(IdSegmentacion)
 );
 SELECT*FROM SEGMENTACION;
-
+--INSERTS A TABLA SEGMENTACION
 INSERT INTO SEGMENTACION VALUES('S1', 'VIP', 'DESCUENTO DEL 20% Y ENVIO GRATIS');
 INSERT INTO SEGMENTACION VALUES('S2', 'ACTIVO', 'DESCUENTO DEL 10% EN CADA COMPRA');
 INSERT INTO SEGMENTACION VALUES('S3', 'OCASIONAL', 'CUPON DE DESCUENTO DEL 5% CADA TRES COMPRAS');
 INSERT INTO SEGMENTACION VALUES('S4', 'INACTIVO', 'SIN BENEFICIO');
 
-
+--TABLA ADMINISTRADOR
 CREATE TABLE ADMINISTRADOR(
 IdAdministrador    VARCHAR2(13),
 Nombre             NVARCHAR2(30) NOT NULL,
@@ -209,7 +210,7 @@ Apellido           NVARCHAR2(30) NOT NULL,
 PRIMARY KEY(IdAdministrador)
 );
 SELECT*FROM ADMINISTRADOR;
---INSERT DE ADMINISTRADOR
+--INSERTS A TABLA ADMINISTRADOR
 INSERT INTO ADMINISTRADOR VALUES ('0101199512568','Sofia','Arias');
 INSERT INTO ADMINISTRADOR VALUES ('0202198714965','Alejandro','Torres');
 INSERT INTO ADMINISTRADOR VALUES ('0303198689452','Tomas','Madrid');
@@ -250,17 +251,19 @@ INSERT INTO ADMINISTRADOR VALUES ('1415199412503','Mateo','Lara');
 INSERT INTO ADMINISTRADOR VALUES ('1513198947812','Martina','Diaz');
 INSERT INTO ADMINISTRADOR VALUES ('1803199978103','Alejandro','Bravo');
 INSERT INTO ADMINISTRADOR VALUES ('1804198978514','Petrona','Dominguez');
+----------------------------------------------------------------------------------
 
+--TABLA MOTORISTA
 CREATE TABLE MOTORISTA(
 IdMotorista        VARCHAR2(13),
 Nombre             NVARCHAR2(30) NOT NULL,
 Apellido           NVARCHAR2(30) NOT NULL,
 TipoTransporte     NVARCHAR2(30) NOT NULL,
-Placa              VARCHAR2(8),
+Placa              VARCHAR2(8)   UNIQUE,
 PRIMARY KEY(IdMotorista)
 );
 SELECT*FROM MOTORISTA;
---INSERT DE MOTORISTA
+--INSERT A TABLA MOTORISTA
 INSERT INTO  MOTORISTA  VALUES ('1206200106335', 'Babb', 'Caesmans', 'Auto', 'ZUY 2563');
 INSERT INTO  MOTORISTA  VALUES ('1205199015725', 'Tiebold', 'Liebrecht', 'Moto', 'GCN 8560');
 INSERT INTO MOTORISTA   VALUES ('1207199026963', 'Harmonia', 'Tine', 'Auto', 'YDN 5924');
@@ -285,7 +288,7 @@ INSERT INTO MOTORISTA  VALUES ('0817199500154', 'Maximilien', 'Montel', 'Auto', 
 INSERT INTO MOTORISTA  VALUES ('0814200506335', 'Field', 'Dumbrill', 'Auto', 'JPQ 4124');
 INSERT INTO MOTORISTA  VALUES ('0813199415725', 'Morgun', 'Thomel', 'Moto', 'NTJ 6083');
 INSERT INTO MOTORISTA  VALUES ('0827199826963', 'Carena', 'Donizeau', 'Moto', 'XEX 6566');
-INSERT INTO MOTORISTA (IdMotorista, Nombre, Apellido, TipoTransporte) VALUES ('0821198128146', 'Claudina', 'Spragge', 'Bicicleta');
+INSERT INTO MOTORISTA (IdMotorista, Nombre, Apellido, TipoTransporte) VALUES ('0821198128147', 'Claudina', 'Spragge', 'Bicicleta');
 INSERT INTO MOTORISTA  VALUES ('0814199309962', 'Devlin', 'Twitchings', 'Moto', 'AOJ 6531');
 INSERT INTO MOTORISTA  VALUES ('0816198711943', 'Sheena', 'Eggle', 'Moto', 'BAH 2670');
 INSERT INTO MOTORISTA  VALUES ('0812198232392', 'Con', 'Isakovic', 'Moto', 'VSX 6825');
@@ -301,7 +304,9 @@ INSERT INTO MOTORISTA  VALUES ('1002199500154', 'Starr', 'O''Beirne', 'Moto', 'S
 INSERT INTO MOTORISTA  VALUES ('1004198817422', 'Clyve', 'Agastina', 'Moto', 'TIV 2823');
 INSERT INTO MOTORISTA  VALUES ('1017198719896', 'Prinz', 'Luck', 'Auto', 'QIK 1565');
 INSERT INTO MOTORISTA  VALUES ('0801200004524', 'Loralee', 'Sheirlaw', 'Moto', 'PHB 7168');
+---------------------------------------------------------------------------------------------
 
+--TABLA ENCARGADO_INVENTARIO
 CREATE TABLE ENCARGADO_INVENTARIO(
 IdEncargado        VARCHAR2(13),
 Nombre             NVARCHAR2(30) NOT NULL,
@@ -310,8 +315,7 @@ PRIMARY KEY(IdEncargado)
 );
 SELECT*FROM ENCARGADO_INVENTARIO;
 
---INSERT A ENCARGADO INVENTARIO
-
+--INSERTS A TABLA ENCARGADO INVENTARIO
 INSERT INTO ENCARGADO_INVENTARIO VALUES ('0104198912569','Ana','Rivera');
 INSERT INTO ENCARGADO_INVENTARIO VALUES ('0109199098745','Osman','Rojas');
 INSERT INTO ENCARGADO_INVENTARIO VALUES ('0110198945698','Maria','Sanchez');
@@ -414,32 +418,37 @@ INSERT INTO ENCARGADO_INVENTARIO VALUES ('0705198362707', 'Kira', 'Mendez');
 INSERT INTO ENCARGADO_INVENTARIO VALUES ('0603198388014', 'Jessy', 'Osorto');
 -------------------------------------------------------------------------------------
 
+--TABLA CLIENTE 
 CREATE TABLE CLIENTE (
-IdCliente VARCHAR2(13),
-Nombre    NVARCHAR2(30) NOT NULL,
-Apellido  NVARCHAR2(30) NOT NULL,
-Genero    CHAR(1) NOT NULL,
-Usuario   NVARCHAR2(20) NOT NULL UNIQUE,
-Contrasenia NVARCHAR2(20) NOT NULL,
-Email     NVARCHAR2(30) NOT NULL UNIQUE, 
-Direccion  NVARCHAR2(100) NOT NULL,
-IdSegmentacion NVARCHAR2(10) NOT NULL,
+IdCliente       VARCHAR2(13),
+Nombre          NVARCHAR2(30) NOT NULL,
+Apellido        NVARCHAR2(30) NOT NULL,
+Genero          CHAR(1) NOT NULL,
+Usuario         NVARCHAR2(20) NOT NULL UNIQUE,
+Contrasenia     NVARCHAR2(20) NOT NULL,
+Email           NVARCHAR2(30) NOT NULL UNIQUE, 
+Direccion       NVARCHAR2(100) NOT NULL,
+IdSegmentacion  NVARCHAR2(10) NOT NULL,
 PRIMARY KEY (IdCliente),
 CONSTRAINT CHK_GENERO CHECK (Genero in ('F','M')),
 CONSTRAINT FK_CliSeg FOREIGN KEY (IdSegmentacion) REFERENCES SEGMENTACION(IdSegmentacion)
 );
 SELECT*FROM CLIENTE;
+--INSERTS A TABLA CLIENTE
+--aqui los inserts
+--------------------------------------------------------------------------------
 
+--TABLA PRODUCTO
 CREATE TABLE PRODUCTO (
-IdProducto NVARCHAR2(10),
-Nombre NVARCHAR2(30) NOT NULL,
-Precio FLOAT NOT NULL,
-IdMarca NVARCHAR2(10) NOT NULL,
+IdProducto      NVARCHAR2(10),
+Nombre          NVARCHAR2(30) NOT NULL,
+Precio          FLOAT NOT NULL,
+IdMarca         NVARCHAR2(10) NOT NULL,
 PRIMARY KEY (IdProducto),
 CONSTRAINT FK_ProMar FOREIGN KEY (IdMarca) REFERENCES MARCA(IdMarca)
 );
 SELECT*FROM PRODUCTO;
-
+--INSERTS A TABLA PRODUCTO
 INSERT INTO PRODUCTO VALUES ('2026708440', 'Vestido de encaje', '737.82', 'M005');
 INSERT INTO PRODUCTO VALUES ('4042181910', 'Vestido tie-dye ', '404.41', 'M020');
 INSERT INTO PRODUCTO VALUES ('1246372561', 'Vestido con abertura delantera', '817.64', 'M006');
@@ -551,31 +560,34 @@ INSERT INTO PRODUCTO VALUES ('4756980001', 'Zapatos negros', '499.99', 'M093');
 INSERT INTO PRODUCTO VALUES ('1156080201', 'Bolso de anime', '120.10', 'M098');
 INSERT INTO PRODUCTO VALUES ('1156088601', 'Mono de estampado', '500.10', 'M096');
 INSERT INTO PRODUCTO VALUES ('6856080001', 'Mono sin tirantes', '510.10', 'M095');
+-------------------------------------------------------------------------------------
 
-
+--TABLA CARRITO
 CREATE TABLE CARRITO (
-IdCarrito NVARCHAR2(10),
-CantidadProductos INT NOT NULL,
-Total FLOAT NOT NULL,
-IdCliente VARCHAR2(13) NOT NULL,
+IdCarrito           NVARCHAR2(10),
+CantidadProductos   INT NOT NULL,
+Total               FLOAT NOT NULL,
+IdCliente           VARCHAR2(13) NOT NULL,
 PRIMARY KEY (IdCarrito),
 CONSTRAINT CHK_Cant CHECK (CantidadProductos>0),
 CONSTRAINT CHK_Total CHECK (Total>0),
 CONSTRAINT FK_CarCli FOREIGN KEY (IdCliente) REFERENCES CLIENTE(IdCliente)
 );
 SELECT*FROM CARRITO;
+--INSERTS A TABLA CARRITO
+--aqui los inserts
+--------------------------------------------------------------------------------
 
-
-
+--TABLA ENVIO
 CREATE TABLE ENVIO (
-IdEnvio NVARCHAR2(10),
-Direccion NVARCHAR2(100) NOT NULL,
-Estado NVARCHAR2(15) NOT NULL,
-MetodoPago NVARCHAR2(15) NOT NULL,
-Monto FLOAT NOT NULL,
-Fecha DATE NOT NULL,
-IdCarrito NVARCHAR2(10) NOT NULL,
-IdMotorista  VARCHAR2(13)NOT NULL,
+IdEnvio            NVARCHAR2(10),
+Direccion          NVARCHAR2(100) NOT NULL,
+Estado             NVARCHAR2(15) NOT NULL,
+MetodoPago         NVARCHAR2(15) NOT NULL,
+Monto              FLOAT NOT NULL,
+Fecha              DATE NOT NULL,
+IdCarrito          NVARCHAR2(10) NOT NULL,
+IdMotorista        VARCHAR2(13)NOT NULL,
 PRIMARY KEY (IdEnvio),
 CONSTRAINT CHK_Est CHECK (Estado IN ('En camino','Entregado')),
 CONSTRAINT CHK_MetPag CHECK (MetodoPago IN ('PayPal','Targeta','Transferencia')),
@@ -584,49 +596,68 @@ CONSTRAINT FK_EnvCar FOREIGN KEY (IdCarrito) REFERENCES CARRITO(IdCarrito),
 CONSTRAINT FK_EnvMot FOREIGN KEY (IdMotorista) REFERENCES MOTORISTA(IdMotorista)
 );
 SELECT*FROM ENVIO;
+--INSERTS A TABLA ENVIO
+--aqui los inserts
+------------------------------------------------------------------------------------
 
+--TABLA INVENTARIO
 CREATE TABLE INVENTARIO (
-IdRegistro NVARCHAR2(10),
-IdMarca NVARCHAR2(10),
-IdEncargado VARCHAR2(13)NOT NULL,
-Cantidad INT NOT NULL,
-Fecha DATE NOT NULL,
+IdRegistro          NVARCHAR2(10),
+IdMarca             NVARCHAR2(10),
+IdEncargado         VARCHAR2(13)NOT NULL,
+Cantidad            INT NOT NULL,
+Fecha               DATE NOT NULL,
 PRIMARY KEY (IdRegistro, IdMarca),
 CONSTRAINT CHK_Cantidad CHECK (Cantidad>0),
 CONSTRAINT FK_InvMar FOREIGN KEY (IdMarca) REFERENCES MARCA(IdMarca),
 CONSTRAINT FK_InvEnc FOREIGN KEY (IdEncargado) REFERENCES ENCARGADO_INVENTARIO(IdEncargado)
 );
 SELECT*FROM INVENTARIO;
+--INSERTS A TABLA INVENTARIO
+--aqui los inserts
+------------------------------------------------------------------------------------
 
+--TABLA PRODUCTOS_CARRITO
 CREATE TABLE PRODUCTOS_CARRITO (
-IdDetalle NVARCHAR2(10),
-IdCarrito NVARCHAR2(10),
-IdProducto NVARCHAR2(10)NOT NULL,
-FechaAgregado DATE NOT NULL,
-IdEnvio NVARCHAR2(10),
+IdDetalle           NVARCHAR2(10),
+IdCarrito           NVARCHAR2(10),
+IdProducto          NVARCHAR2(10)NOT NULL,
+FechaAgregado       DATE NOT NULL,
+IdEnvio             NVARCHAR2(10),
 PRIMARY KEY (IdDetalle, IdCarrito),
 CONSTRAINT FK_ProCarCar FOREIGN KEY (IdCarrito) REFERENCES CARRITO(IdCarrito),
 CONSTRAINT FK_ProCarPro FOREIGN KEY (IdProducto) REFERENCES PRODUCTO(IdProducto),
 CONSTRAINT FK_ProCarEnv FOREIGN KEY (IdEnvio) REFERENCES ENVIO(IdEnvio)
 );
 SELECT*FROM PRODUCTOS_CARRITO;
+--INSERTS A TABLA PRODUCTOS CARRITO
+--aqui los inserts
+------------------------------------------------------------------------------------
 
+--TABLA PRODUCTO_PERTENE
 CREATE TABLE PRODUCTO_PERTENECE (
-IdProducto NVARCHAR2(10),
-IdCategoria NVARCHAR2(10),
+IdProducto          NVARCHAR2(10),
+IdCategoria         NVARCHAR2(10),
 PRIMARY KEY (IdProducto, IdCategoria),
 CONSTRAINT FK_ProPerPro FOREIGN KEY (IdProducto) REFERENCES PRODUCTO(IdProducto),
 CONSTRAINT FK_ProPerCat FOREIGN KEY (IdCategoria) REFERENCES CATEGORIA(IdCategoria)
 );
 SELECT*FROM PRODUCTO_PERTENECE;
+ --INSERTS A TABLA PRODUCTO_PERTENECE
+ --aqui los inserts
+------------------------------------------------------------------------------------
 
+--TABLA ADMINISTRACION
 CREATE TABLE ADMINISTRACION (
-IdAdmin VARCHAR2(13),
-IdMarca NVARCHAR2(10),
-IdProducto NVARCHAR2(10),
+IdAdmin             VARCHAR2(13),
+IdMarca             NVARCHAR2(10),
+IdProducto          NVARCHAR2(10),
 PRIMARY KEY (IdAdmin,IdMarca,IdProducto),
 CONSTRAINT FK_AdmAdm FOREIGN KEY (IdAdmin) REFERENCES ADMINISTRADOR(IdAdministrador),
 CONSTRAINT FK_AdmMar FOREIGN KEY (IdMarca) REFERENCES MARCA(IdMarca),
 CONSTRAINT FK_AdmPro FOREIGN KEY (IdProducto) REFERENCES PRODUCTO(IdProducto)
 );
 SELECT*FROM ADMINISTRACION;
+--INSERTS A TABLA ADMINISTRACION
+--aqui los inserts
+------------------------------------------------------------------------------------
