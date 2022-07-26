@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="078FCC7F-0898-4067-9383-651A17C742A3" schemaObject="CE0FFD1C-9ED3-C091-507A-EBEACD6CADEC" name="PRODUCTO_PERTENECE">
+<sourceConnName>BD1_U3_PROYECTO_G3</sourceConnName>
+<sourceObjSchema>BD1_U3_PROYECTO_G3</sourceObjSchema>
+<sourceObjName>PRODUCTO_PERTENECE</sourceObjName>
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:43 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDPRODUCTO" id="ED319AB9-1F3B-513D-C4E9-E54D92732E57">
+<sourceConnName>BD1_U3_PROYECTO_G3</sourceConnName>
+<sourceObjSchema>PRODUCTO_PERTENECE</sourceObjSchema>
+<sourceObjName>IDPRODUCTO</sourceObjName>
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:47 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5E689F3-01D5-39FC-AAAD-F4F7E7176309" referredColumn="43FEB63F-8E40-1A44-DF1D-68E53B5327F4"/>
+</associations>
+</Column>
+<Column name="IDCATEGORIA" id="4DA2C95C-FB24-1C4C-A368-F3F564CC9CF5">
+<sourceConnName>BD1_U3_PROYECTO_G3</sourceConnName>
+<sourceObjSchema>PRODUCTO_PERTENECE</sourceObjSchema>
+<sourceObjName>IDCATEGORIA</sourceObjName>
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:47 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C2C14C6-CD98-A2F2-3995-C0D9022A60E4" referredColumn="45E11A49-2C88-13DF-7E40-D5114C0B0ACB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C267579E-058D-8878-8E43-DA07333F67EE" schemaObject="CE0FFD1C-9ED3-C091-507A-EBEACD6CADEC" name="PRODUCTO_PERTENECE_PK">
+<sourceConnName>BD1_U3_PROYECTO_G3</sourceConnName>
+<sourceObjSchema>BD1_U3_PROYECTO_G3</sourceObjSchema>
+<sourceObjName>SYS_C008442</sourceObjName>
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:50 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED319AB9-1F3B-513D-C4E9-E54D92732E57"/>
+<colUsage columnID="4DA2C95C-FB24-1C4C-A368-F3F564CC9CF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="48A63872-151D-FFFF-610B-5D6423A0834F" name="FK_PROPERCAT">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:56 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DA2C95C-FB24-1C4C-A368-F3F564CC9CF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6A5336F-4DC7-B2CD-A4F0-BA35F24BE883" name="FK_PROPERPRO">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:56 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED319AB9-1F3B-513D-C4E9-E54D92732E57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

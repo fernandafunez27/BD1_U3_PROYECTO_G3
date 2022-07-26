@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9EF79A9B-9782-FE90-2898-305785E5AE0C" schemaObject="CE0FFD1C-9ED3-C091-507A-EBEACD6CADEC" name="CATEGORIA">
+<sourceConnName>BD1_U3_PROYECTO_G3</sourceConnName>
+<sourceObjSchema>BD1_U3_PROYECTO_G3</sourceObjSchema>
+<sourceObjName>CATEGORIA</sourceObjName>
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:43 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDCATEGORIA" id="45E11A49-2C88-13DF-7E40-D5114C0B0ACB">
+<sourceConnName>BD1_U3_PROYECTO_G3</sourceConnName>
+<sourceObjSchema>CATEGORIA</sourceObjSchema>
+<sourceObjName>IDCATEGORIA</sourceObjName>
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:47 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="5DF16633-4683-1B24-4FDD-8FCF3FF84A63">
+<sourceConnName>BD1_U3_PROYECTO_G3</sourceConnName>
+<sourceObjSchema>CATEGORIA</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:47 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E83274B5-DAF3-81CF-06FD-167129DBA110" schemaObject="CE0FFD1C-9ED3-C091-507A-EBEACD6CADEC" name="CATEGORIA_PK">
+<sourceConnName>BD1_U3_PROYECTO_G3</sourceConnName>
+<sourceObjSchema>BD1_U3_PROYECTO_G3</sourceObjSchema>
+<sourceObjName>SYS_C008339</sourceObjName>
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:50 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45E11A49-2C88-13DF-7E40-D5114C0B0ACB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

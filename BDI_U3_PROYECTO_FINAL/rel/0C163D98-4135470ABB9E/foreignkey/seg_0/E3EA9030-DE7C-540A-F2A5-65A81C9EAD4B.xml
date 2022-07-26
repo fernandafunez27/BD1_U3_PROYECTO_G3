@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E3EA9030-DE7C-540A-F2A5-65A81C9EAD4B" containerWithKeyObject="E4CF3AD2-5C50-F810-7849-ABFD5E4B9D05" localFKIndex="7910E184-3F33-399D-D914-5CFDD3315C0C" name="FK_ADMADM">
+<sourceConnName>BD1_U3_PROYECTO_G3</sourceConnName>
+<sourceObjSchema>BD1_U3_PROYECTO_G3</sourceObjSchema>
+<sourceObjName>FK_ADMADM</sourceObjName>
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:56 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<referredTableLongName>BD1_U3_PROYECTO_G3.ADMINISTRADOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E10C5063-09D5-49C1-31BA-FCF9344DB481</referredTableID>
+<keyObject>2EDFD332-8A40-BC9C-F10C-FD83EAA614BB</keyObject>
+<referredKeyID>2EDFD332-8A40-BC9C-F10C-FD83EAA614BB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>IDADMINISTRADOR</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

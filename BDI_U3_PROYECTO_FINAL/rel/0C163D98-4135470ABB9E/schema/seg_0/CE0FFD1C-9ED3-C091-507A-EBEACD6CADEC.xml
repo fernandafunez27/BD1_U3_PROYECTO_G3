@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="BD1_U3_PROYECTO_G3" directorySegmentName="seg_0" id="CE0FFD1C-9ED3-C091-507A-EBEACD6CADEC">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:43 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+</SchemaObject>

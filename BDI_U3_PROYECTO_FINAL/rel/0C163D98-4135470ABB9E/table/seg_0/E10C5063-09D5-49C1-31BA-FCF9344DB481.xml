@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E10C5063-09D5-49C1-31BA-FCF9344DB481" schemaObject="CE0FFD1C-9ED3-C091-507A-EBEACD6CADEC" name="ADMINISTRADOR">
+<sourceConnName>BD1_U3_PROYECTO_G3</sourceConnName>
+<sourceObjSchema>BD1_U3_PROYECTO_G3</sourceObjSchema>
+<sourceObjName>ADMINISTRADOR</sourceObjName>
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:43 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDADMINISTRADOR" id="EB5B0D61-CFC1-0864-E135-CBA4524F31B8">
+<sourceConnName>BD1_U3_PROYECTO_G3</sourceConnName>
+<sourceObjSchema>ADMINISTRADOR</sourceObjSchema>
+<sourceObjName>IDADMINISTRADOR</sourceObjName>
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:47 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13 BYTE</dataTypeSize>
+<ownDataTypeParameters>13 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="D9C894FF-9CA2-E08F-0D60-5583601FAB47">
+<sourceConnName>BD1_U3_PROYECTO_G3</sourceConnName>
+<sourceObjSchema>ADMINISTRADOR</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:47 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APELLIDO" id="F6C9A1BD-C57D-ECC7-BAD8-F5801F31911E">
+<sourceConnName>BD1_U3_PROYECTO_G3</sourceConnName>
+<sourceObjSchema>ADMINISTRADOR</sourceObjSchema>
+<sourceObjName>APELLIDO</sourceObjName>
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:47 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2EDFD332-8A40-BC9C-F10C-FD83EAA614BB" schemaObject="CE0FFD1C-9ED3-C091-507A-EBEACD6CADEC" name="ADMINISTRADOR_PK">
+<sourceConnName>BD1_U3_PROYECTO_G3</sourceConnName>
+<sourceObjSchema>BD1_U3_PROYECTO_G3</sourceObjSchema>
+<sourceObjName>SYS_C008349</sourceObjName>
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:50 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB5B0D61-CFC1-0864-E135-CBA4524F31B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

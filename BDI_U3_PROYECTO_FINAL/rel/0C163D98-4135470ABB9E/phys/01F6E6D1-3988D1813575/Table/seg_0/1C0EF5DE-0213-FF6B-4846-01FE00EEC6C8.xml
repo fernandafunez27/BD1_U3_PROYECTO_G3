@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="MARCA" directorySegmentName="seg_0" id="1C0EF5DE-0213-FF6B-4846-01FE00EEC6C8">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:43 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<schemaObject>CE0FFD1C-9ED3-C091-507A-EBEACD6CADEC</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>AAB5A97B-7B32-31D7-E53B-308DC754D93A</segment>
+<tableSpace>4D3A4E4D-F8FB-F37B-4B2B-CDE7A68E250B</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EMAIL" id="619553F6-435E-86E0-5356-9B77703AFFEF">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:47 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="8FDB91A8-ED20-1985-280C-8029CC1700F2">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:47 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA" id="AC528B87-D37B-5F8B-0C8F-B8E0807C9200">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:47 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IDMARCA" id="E61DA022-93E7-7E31-9096-845A52B71E01">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:47 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="MARCA_PK" id="2A39CE91-171D-2B87-251D-B967A3C84FC5">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:51 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<schemaObject>CE0FFD1C-9ED3-C091-507A-EBEACD6CADEC</schemaObject>
+<segment>1AB5BD82-5DDA-9CC2-CF07-30AEF412AF82</segment>
+<tableSpace>4D3A4E4D-F8FB-F37B-4B2B-CDE7A68E250B</tableSpace>
+<indexSegment>1AB5BD82-5DDA-9CC2-CF07-30AEF412AF82</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="MARCA_EMAIL_UN" id="D6B24395-C4D1-E527-D214-A8EACBC52807">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:51 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<schemaObject>CE0FFD1C-9ED3-C091-507A-EBEACD6CADEC</schemaObject>
+<segment>1AB5BD82-5DDA-9CC2-CF07-30AEF412AF82</segment>
+<tableSpace>4D3A4E4D-F8FB-F37B-4B2B-CDE7A68E250B</tableSpace>
+<indexSegment>1AB5BD82-5DDA-9CC2-CF07-30AEF412AF82</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

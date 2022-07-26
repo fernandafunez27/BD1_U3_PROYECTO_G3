@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D5E8EDDE-BD54-688D-93EC-80B887032BF4" containerWithKeyObject="0392EAC1-A3F0-F48D-27D4-100421A3E3FD" localFKIndex="8C9DE204-7732-1998-CE2B-92C3B96A90F1" name="FK_PROCARCAR">
+<sourceConnName>BD1_U3_PROYECTO_G3</sourceConnName>
+<sourceObjSchema>BD1_U3_PROYECTO_G3</sourceObjSchema>
+<sourceObjName>FK_PROCARCAR</sourceObjName>
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:56 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<referredTableLongName>BD1_U3_PROYECTO_G3.CARRITO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C42D1381-97E2-A318-D770-A3C42243C1A1</referredTableID>
+<keyObject>8CFFC0A1-6F22-F6CE-F8CE-EB2C44B17850</keyObject>
+<referredKeyID>8CFFC0A1-6F22-F6CE-F8CE-EB2C44B17850</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>IDCARRITO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

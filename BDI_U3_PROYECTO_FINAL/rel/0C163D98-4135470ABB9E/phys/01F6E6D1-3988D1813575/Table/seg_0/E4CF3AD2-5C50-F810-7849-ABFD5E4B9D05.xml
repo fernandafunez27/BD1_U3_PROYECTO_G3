@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="ADMINISTRACION" directorySegmentName="seg_0" id="E4CF3AD2-5C50-F810-7849-ABFD5E4B9D05">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:43 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<schemaObject>CE0FFD1C-9ED3-C091-507A-EBEACD6CADEC</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>CE3E3156-98B8-848D-43CE-665663FBD7D7</segment>
+<tableSpace>4D3A4E4D-F8FB-F37B-4B2B-CDE7A68E250B</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="IDPRODUCTO" id="79B26DF3-7700-401C-3D47-C545EB5994C8">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:47 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IDMARCA" id="81FAA699-0A64-479C-3C0F-3F881B69E9C7">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:47 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IDADMIN" id="F28D89E6-3C3E-0DD2-ABC8-766F36CC6466">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:47 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_ADMPRO" id="0DD7E58B-9B9F-F506-1D0F-C52B2BA881C8">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:56 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_ADMMAR" id="5211165C-C0B7-DAF3-3E39-C37D19514881">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:56 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_ADMADM" id="7910E184-3F33-399D-D914-5CFDD3315C0C">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:56 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ADMINISTRACION_PK" id="01E75BFD-10B9-71FB-CE09-5CCABF6DB981">
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:51 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<schemaObject>CE0FFD1C-9ED3-C091-507A-EBEACD6CADEC</schemaObject>
+<segment>81BCBE76-E99A-A55B-B077-E601795F08E0</segment>
+<tableSpace>4D3A4E4D-F8FB-F37B-4B2B-CDE7A68E250B</tableSpace>
+<indexSegment>81BCBE76-E99A-A55B-B077-E601795F08E0</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

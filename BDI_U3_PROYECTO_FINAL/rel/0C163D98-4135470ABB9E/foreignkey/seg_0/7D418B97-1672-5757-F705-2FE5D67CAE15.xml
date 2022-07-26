@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7D418B97-1672-5757-F705-2FE5D67CAE15" containerWithKeyObject="638BB45B-4D74-6E14-5397-089ADD94A10D" localFKIndex="B98DD813-7BBB-3799-E284-080FD9B16CA2" name="FK_INVENC">
+<sourceConnName>BD1_U3_PROYECTO_G3</sourceConnName>
+<sourceObjSchema>BD1_U3_PROYECTO_G3</sourceObjSchema>
+<sourceObjName>FK_INVENC</sourceObjName>
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:56 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<referredTableLongName>BD1_U3_PROYECTO_G3.ENCARGADO_INVENTARIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>42DB58DC-9EC1-ED7E-1483-50302F3BB736</referredTableID>
+<keyObject>49558D45-7880-2687-E18E-4C0D0547903C</keyObject>
+<referredKeyID>49558D45-7880-2687-E18E-4C0D0547903C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>IDENCARGADO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

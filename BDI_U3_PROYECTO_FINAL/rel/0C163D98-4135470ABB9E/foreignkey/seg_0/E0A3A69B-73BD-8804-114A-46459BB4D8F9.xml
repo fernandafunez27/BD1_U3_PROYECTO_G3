@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E0A3A69B-73BD-8804-114A-46459BB4D8F9" containerWithKeyObject="A0DF594E-E740-CDA4-E870-F66DA3E040EA" localFKIndex="48630D54-9E1A-EC73-F93A-B3504466954C" name="FK_PROMAR">
+<sourceConnName>BD1_U3_PROYECTO_G3</sourceConnName>
+<sourceObjSchema>BD1_U3_PROYECTO_G3</sourceObjSchema>
+<sourceObjName>FK_PROMAR</sourceObjName>
+<createdBy>Lleymi</createdBy>
+<createdTime>2022-07-23 00:26:56 UTC</createdTime>
+<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
+<referredTableLongName>BD1_U3_PROYECTO_G3.MARCA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1C0EF5DE-0213-FF6B-4846-01FE00EEC6C8</referredTableID>
+<keyObject>2A39CE91-171D-2B87-251D-B967A3C84FC5</keyObject>
+<referredKeyID>2A39CE91-171D-2B87-251D-B967A3C84FC5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>IDMARCA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
