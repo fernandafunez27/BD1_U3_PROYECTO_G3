@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<StructuredTypeProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.StructuredTypeProxyOraclev10g" name="SDO_GEOMETRY" directorySegmentName="seg_0" id="47E390DE-0671-C4B1-8428-0F45CBEE18F8">
-<createdBy>Lleymi</createdBy>
-<createdTime>2022-07-23 00:26:10 UTC</createdTime>
-<ownerDesignName>BDI_U3_PROYECTO_FINAL</ownerDesignName>
-<owner>MDSYS</owner>
-</StructuredTypeProxyOraclev10g>
