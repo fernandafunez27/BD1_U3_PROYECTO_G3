@@ -1627,10 +1627,10 @@ HAVING count (e.IdEnvio) > 10;
 
 
 --g. Realizar una consulta que haga uso del operador BETWEEN
---Información de las empresas que empezaron a trabajar con nosotros el año 2019
-
-SELECT * FROM MARCA
-WHERE Fecha BETWEEN '01-01-2019' AND '31-12-2019';
+--Mostrar la suma de ventas que hubo la primer mitad del año 2021
+SELECT  SUM(MONTO) Monto
+FROM ENVIO
+WHERE Fecha BETWEEN '01-01-2021' AND  '30-06-2021';
 
 
 --h. Realizar una consulta que haga uso del operador IN
@@ -1646,6 +1646,8 @@ WHERE IdMarca IN ('M001','M002','M003','M004');
 SELECT MetodoPago, SUM(MONTO) Monto
 FROM ENVIO
 GROUP BY MetodoPago;
+
+
 
 
 --j. Realizar una consulta que haga uso de la sentencia CASE
