@@ -1559,3 +1559,107 @@ INSERT INTO ADMINISTRACION VALUES ('0607198900057', 'M096', '1356881601');
 INSERT INTO ADMINISTRACION VALUES ('0607198900057', 'M095', '6856080241');
 INSERT INTO ADMINISTRACION VALUES ('0607198900057', 'M012', '5430280389');
 
+
+--------------------------------------------------------------------------------------
+----------------------------------CONSULTAS-------------------------------------------
+
+--a. Realizar una consulta que haga uso del operador LIKE 
+--Información de los clientes que viven actualmente en San Pedro Sula
+
+SELECT * FROM CLIENTE 
+WHERE Direccion LIKE '%San Pedro Sula%';
+
+
+--b. Hacer uso de subconsultas para obtener información de dos o más tablas.
+--Envios del presente año, con su monto, nombre y apellido de los clientes propietarios.
+
+SELECT EN.IdEnvio, CLI.Nombre, CLI.Apellido, EN.Monto, EN.Fecha
+FROM ENVIO EN
+INNER JOIN PRODUCTOS_CARRITO PC ON PC.IdEnvio=EN.IdEnvio
+INNER JOIN CARRITO CA ON CA.IdCarrito=PC.IdCarrito
+INNER JOIN CLIENTE CLI ON CLI.IdCliente=CA.IdCliente
+WHERE  EN.Fecha BETWEEN '01-01-2022' AND '31-07-2022'
+GROUP BY EN.IdEnvio, CLI.Nombre, CLI.Apellido, EN.Monto, EN.Fecha
+ORDER BY EN.Fecha;
+
+
+--c. Una consulta que haga uso del INNER JOIN.
+--Productos que ha comprado Manuel Vargas con IdCliente=0410199036059
+
+SELECT PC.IdProducto, PR.Nombre, PR.Precio
+FROM CLIENTE CLI 
+INNER JOIN CARRITO CA ON CA.IdCliente=CLI.IdCliente
+INNER JOIN PRODUCTOS_CARRITO PC ON PC.IdCarrito=CA.IdCarrito
+INNER JOIN PRODUCTO PR ON PR.IdProducto=PC.IdProducto
+WHERE CLI.IdCliente='0410199036059';
+
+
+--d. Una consulta que haga uso del LEFT JOIN.
+--Mostrrar todas las marcas y si hay un inventario regitrado de ellas, mostrar las fechas en que se hicieron y el id del encargado que estuvo a cargo
+
+SELECT m.Nombre, i.fecha, i.IdEncargado
+FROM MARCA m
+LEFT JOIN INVENTARIO i 
+ON m.IdMarca = i.IdMarca
+ORDER BY m.Nombre;
+
+
+
+--e. Una consulta que haga uso del RIGHT JOIN
+-- Mostrar el id y nombre de las empresas registradas, y hay productos de esa empresa registrados mostrarlos.
+
+SELECT m.IdMarca, m.Nombre, p.Nombre
+FROM PRODUCTO p
+RIGHT JOIN MARCA m
+ON m.IdMarca = p.IdMarca
+ORDER BY m.IdMarca;
+
+
+--f. Una consulta que haga uso del GROUP BY y el HAVING
+-- Mostrar los Tipos de transporte que tienen acumulados entre ellos más de 10 envios
+
+SELECT m.TipoTransporte, count (e.IdEnvio) Total_envios 
+FROM Motorista m
+INNER JOIN Envio e 
+ON m.IdMotorista = e.IdMotorista
+GROUP BY m.TipoTransporte 
+HAVING count (e.IdEnvio) > 10;
+
+
+--g. Realizar una consulta que haga uso del operador BETWEEN
+--Información de las empresas que empezaron a trabajar con nosotros el año 2019
+
+SELECT * FROM MARCA
+WHERE Fecha BETWEEN '01-01-2019' AND '31-12-2019';
+
+
+--h. Realizar una consulta que haga uso del operador IN
+--Mostrar los productos pertenecientes a las marcas de id 'M001','M002','M003' o 'M004'
+
+SELECT * FROM PRODUCTO 
+WHERE IdMarca IN ('M001','M002','M003','M004');
+
+
+--i. Realizar una consulta que haga uso de la función de agregación SUM junto a GROUP BY 
+--Mostrar la cantidad de dinero recibido en total por cada tipo de método de pago.
+
+SELECT MetodoPago, SUM(MONTO) Monto
+FROM ENVIO
+GROUP BY MetodoPago;
+
+
+--j. Realizar una consulta que haga uso de la sentencia CASE
+--Mostrar todos los productos, su precio y a que descripción que pueden recibir segun éste.
+
+SELECT NOMBRE, PRECIO,
+		CASE 
+ 			WHEN PRECIO<150
+ 			THEN 'BARATO'
+			WHEN  PRECIO>=150 AND PRECIO<300
+ 			THEN 'MEDIO'
+ 			WHEN  PRECIO>=300
+ 			THEN 'CARO'
+ 			ELSE 'DESCONOCIDO'
+ 			END Descripcion
+FROM PRODUCTO;
+
